@@ -1,0 +1,26 @@
+.beta #footer {
+	.download {
+		display: none !important;
+	}
+	nav {
+		padding: 20px 0 25px;
+	}
+	ul {
+		padding-top: 22px;
+	}
+	> hr {
+		display: block !important;
+		opacity: .2;
+	}
+}
+
+.beta #get-app {
+	.platforms {
+		margin-bottom: 0;
+	}
+}
+
+.beta #browse-movies {
+	display: none;
+}
+

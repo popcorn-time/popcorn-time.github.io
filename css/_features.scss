@@ -1,0 +1,50 @@
+#features {
+	padding: 35px 0;
+
+	article {
+		width: 400px;
+		float: left;
+		padding: 30px 0;
+
+		&:nth-child(even) {
+			margin-left: 180px;
+		}
+
+		img {
+			float: left;
+			margin-right: 25px;
+			position: relative;
+			top: -10px;
+		}	
+	}
+
+	.action {
+		padding-top: 25px;
+	}
+
+	.pochoclin {
+		padding-left: 150px;
+	}
+
+	hr {
+		border: none;
+		border-top: 1px solid #b7bbc2;
+		position: relative;
+		top: 10px;
+		z-index: -1;
+		margin-top: 20px;
+
+		+ h2 {
+			background: #fff;
+			display: inline-block;
+			padding: 0 20px;
+			margin-top: -50px;
+		}
+	}
+	small {
+		display: block;
+		font-style: italic;
+		color: #6496b7;
+		line-height: 25px;
+	}
+}

@@ -1,0 +1,13 @@
+body.mac .dl-win,
+body.win .dl-mac,
+body.nope .dl-win {
+	display: none !important;
+}
+
+body .dl-win {
+	display: none !important;
+}
+
+body.win .dl-win {
+	display: inline-block !important;
+}

@@ -1,0 +1,33 @@
+#get-app {
+	text-align: center;
+	font-size: 24px;
+	padding: 50px 0 0 0;
+	color: #444c5e;
+
+	.platforms {
+		padding: 50px 0;
+
+		li {
+			list-style: none;
+			display: inline-block;
+			padding: 0 40px;
+
+			&:before {
+				display: block;
+				font-size: 86px;
+				text-indent: 8px;
+				margin-bottom: 20px;
+				color: $dark-blue;
+			}
+			small {
+				display: block;
+				color: #6496b7;
+				font-size: 12px;
+				font-style: italic;
+			}
+			[class^="btn-"] {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}

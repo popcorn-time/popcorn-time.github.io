@@ -1,0 +1,145 @@
+#footer {
+	width: 980px;
+	margin: 0 auto;
+
+	.logo {
+		display: block;
+		float: left;
+		text-indent: -9999px;
+		overflow: hidden;
+		width: 193px;
+		height: 46px;
+		background: url(../images/footer-logo.png) no-repeat;
+		margin-top: 21px;
+	}
+	nav {
+		padding: 10px 0 45px;
+	}
+
+	ul {
+		float: right;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			list-style: none;
+			vertical-align: middle;
+			margin-left: 35px;
+
+			&.social {
+				margin-left: 10px;
+
+				+ :not(.social) {
+					margin-left: 50px;
+				}
+			}
+			&.download {
+				position: relative;
+				top: 9px;
+			}	
+			&.github {
+				position: relative;
+				margin-left: 70px;
+			}	
+		}
+		a {
+			color: #a2a2a2;
+			text-decoration: none;
+			position: relative;
+
+			&:hover {
+				color: #444;
+			}
+
+			&.btn-main {
+				color: #fff;
+			}
+			&.icon-github:before {
+				position: absolute;
+				left: -30px;
+			}
+			&.icon-facebook, &.icon-twitter {
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				display: block;
+				border-radius: 50%;
+				font-size: 14px;
+				color: #fff;
+				text-indent: 12px;
+				background: #0072bc;
+				-webkit-transition: background ease .2s;
+				-moz-transition: background ease .2s;
+				transition: background ease .2s;
+
+				&:hover {
+					background: darken(#0072bc, 7%);
+				}
+			}
+			&.icon-twitter {
+				text-indent: 5px;
+				background: #00bff3;
+
+				&:hover {
+					background: darken(#00bff3, 7%);
+				}
+			}
+			&.icon-facebook:before, &.icon-twitter:before {
+				display: block;
+				position: absolute;
+				top: 8px;
+				left: 50%;
+				margin-left: -15px;
+			}
+			&.icon-twitter:before {
+				font-size: 12px;
+				top: 9px;
+				margin-left: -13px;
+			}
+		}
+
+		small {
+			display: block;
+			color: #6496b7;
+			font-size: 12px;
+			font-style: italic;
+			
+		}
+	}
+
+	hr {
+		border: none;
+		border-top: 1px solid #a2a2a2;
+	}
+
+	hr + i {
+		display: block;
+		width: 40px;
+		height: 20px;
+		background: url(../images/footer-film.png) no-repeat;
+		margin: -18px auto 0;
+	}
+
+	footer {
+		text-align: center;
+		font-size: 14px;
+
+		p {
+			padding: 20px 0;
+
+			span {
+				color: #e74c3c;
+			}
+		}
+
+		small {
+			display: block;
+			font-size: 14px;
+			color: #d7d4d4;
+			a {
+				color:#6496b7;
+			}
+		}
+	}
+}
