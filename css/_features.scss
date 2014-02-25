@@ -48,3 +48,31 @@
 		line-height: 25px;
 	}
 }
+
+.warning {
+	background: rgba(251, 249, 93, .5);
+	font-size: 16px;
+	padding: 15px 0;
+	color: #858230;
+
+	h5 {
+		font-size: 18px;
+		color: #858230;
+		display: block;
+		width: 880px;
+		margin: 0 auto;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			left: -50px;
+			font-size: 30px;
+		}
+	}
+	p {
+		font-style: italic;
+		display: block;
+		width: 880px;
+		margin: 5px auto;
+	}
+}

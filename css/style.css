@@ -2649,6 +2649,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .icon-window:before {
   content: "\e60c"; }
 
+.icon-info:before {
+  content: "\e60d"; }
+
+.icon-close:before {
+  content: "\e60e"; }
+
 body {
   font-family: "BrandonText";
   font-size: 16px;
@@ -2746,8 +2752,27 @@ h5 {
     background-color: #a82315;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), inset 0px 1px rgba(255, 255, 255, 0.2); }
 
+.icon-twitter {
+  background: #36bff4; }
+  .icon-twitter:before {
+    font-size: 16px; }
+  .icon-twitter:hover {
+    background: #3cd0fa; }
+  .icon-twitter:active {
+    background: #35bef3; }
+
+.icon-facebook {
+  background: #1b6fbb; }
+  .icon-facebook:hover {
+    background: #2081d1; }
+  .icon-facebook:active {
+    background: #1864a9; }
+
 .btn-wider {
   padding: 14px 45px; }
+
+.btn-wide {
+  width: 200px; }
 
 .btn-med {
   width: 130px;
@@ -2852,6 +2877,28 @@ h5 {
     font-style: italic;
     color: #6496b7;
     line-height: 25px; }
+
+.warning {
+  background: rgba(251, 249, 93, 0.5);
+  font-size: 16px;
+  padding: 15px 0;
+  color: #858230; }
+  .warning h5 {
+    font-size: 18px;
+    color: #858230;
+    display: block;
+    width: 880px;
+    margin: 0 auto;
+    position: relative; }
+    .warning h5:before {
+      position: absolute;
+      left: -50px;
+      font-size: 30px; }
+  .warning p {
+    font-style: italic;
+    display: block;
+    width: 880px;
+    margin: 5px auto; }
 
 #how {
   background: url(../images/bg-how.jpg) no-repeat center #0e1226;
@@ -3086,6 +3133,13 @@ h5 {
 
 .beta #browse-movies {
   display: none; }
+
+.soon #links .download,
+.soon #features .action {
+  display: none; }
+
+.soon #links .social {
+  margin: 0 10px; }
 
 body.mac .dl-win,
 body.win .dl-mac,

@@ -2,10 +2,12 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta name="description" content="Stream movies from torrents. Skip the downloads. Launch, click, watch." />
 	<link rel="image_src" href="http://getpopcornti.me/images/header-ui.jpg" / >
 	<meta property="og:title" content="Popcorn Time" />
 	<meta property="og:type" content="website" />
@@ -25,7 +27,7 @@
 	
 	</script>
 </head>
-<body class="beta">
+<body class="beta soon">
 	<section id="header">
 
 		<nav class="fixed-width fadeInDown wow">
@@ -33,13 +35,116 @@
 		</nav>
 
 		<div class="text fadeInDown wow">
-			<h1>Hello world!</h1>
-			<p>The adventure begins here</p>
+			<h1>Watch torrent movies instantly</h1>
+			<p>We're working on making watching movies as easy as 1, 2, 3.</p>
 		</div>
 
+		<ul id="links">
+			<li class="download dl-mac"><a href="https://s3-us-west-2.amazonaws.com/popcorntime/Popcorn%2BHour%2BRC1.mac.zip" class="btn-main icon-mac">Download now</a><br /><small>For Mac OSX 10.7 and above</small></li>
+			<li class="download dl-win"><a href="https://s3-us-west-2.amazonaws.com/popcorntime/Popcorn%2BHour%2BRC1.win32.zip" class="btn-main icon-win">Download now</a><br /><small>For Windows 7 and above</small></li>
+			<li class="social"><a href="http://twitter.com/getpopcornapp" class="btn-social btn-wide icon-facebook" target="_blank">Like Us</a></li>
+			<li class="social"><a href="http://facebook.com/getpopcorntime" class="btn-social btn-wide icon-twitter" target="_blank">Follow Us</a></li>
+		</ul>
+
+		<img src="images/header-ui.jpg" class="ui-screenshot fadeInUp wow" alt="Popcorn Time UI">
 	</section>
 
-	
+	<div class="container">
+		<div class="warning fadeIn wow">
+			<h5 class="icon-info">Popcorn Hour streams movies from torrents</h5>
+			<p>Downloading copyrighted material through torrents may be illegal in your country. Use at your own risk.</p>
+		</div>
+		<section id="features" class="fixed-width">
+			<div class="clear-fix">
+				<article class="fadeInLeft wow">
+					<img src="images/icon-best.gif" alt="">
+					<h5>The best movies</h5>
+					<p>We're constantly searching all over the web for the best torrents from the most important sites.</p>
+				</article>
+
+				<article class="fadeInRight wow">
+					<img src="images/icon-watch.gif" alt="">
+					<h5>No restrictions</h5>
+					<p>Watch any movie as many times as you want. All you need to get started is a proper internet connection.</p>
+				</article>
+
+				<article class="fadeInLeft wow">
+					<img src="images/icon-search.gif" alt="">
+					<h5>Endless catalogue</h5>
+					<p>If the movie is out there, Popcorn Time will find the best version possible and start streaming it right away.</p>
+				</article>
+
+				<article class="fadeInRight wow">
+					<img src="images/icon-subs.gif" alt="">
+					<h5>The best quality</h5>
+					<p>No more waiting; watch your movie instantly in HD and with subtitles. And then watch one more.</p>
+				</article>
+			</div>
+
+			<div class="width-50 align-center action fadeInUp wow">
+				<img src="images/pochoclin.gif" alt="Pochoclin" class="align-center pochoclin">
+				<hr />
+				<h2>Best of all... it's free!</h2>
+				<div class="dl-mac">
+					<a href="#" class="btn-disabled icon-mac">Coming soon!</a>
+					<!-- <small>For Mac OSX 10.7 and above</small> -->
+				</div>
+				<div class="dl-win">
+					<a href="#" class="btn-disabled icon-win">Coming soon!</a>
+					<!-- <small>For Windows XP and above</small> -->
+				</div>
+			</div>
+		</section>
+
+		<section id="how">
+			<div class="fixed-width fadeInLeft wow">
+				<h2>Hard to believe?</h2>
+				<h4>See how easy it works</h4>
+				<ul class="steps">
+					<li class="icon-eye">Open PT &amp; select a movie</li>
+					<li class="icon-hd">Choose HD &amp; Subtitles</li>
+					<li class="icon-play">Press play &amp; enjoy!</li>
+				</ul>
+			</div>
+			<img src="images/how-ui.jpg" class="ui-screenshot fadeInRight wow" alt="Popcorn Time UI">
+		</section>
+
+		<section id="get-app">
+			<div class="fadeIn wow">
+				<h2>A whole new way to watch movies</h2>
+				<p>You just take care of the popcorn, leave the rest to us.</p>
+			</div>
+			<ul class="platforms">
+				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="#" class="btn-disabled btn-med icon-mac">Mac OSX</a><small>Soon!</small></li>
+				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="#" class="btn-disabled btn-med icon-win">Windows</a><small>Soon!</small></li>
+				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="#" class="btn-disabled btn-med">Linux</a><small>Soon!</small></li>
+			</ul>
+		</section>
+
+		<section id="browse-movies">
+			<h2>These are some of the movies you'd be able to watch</h2>
+		</section>
+
+		<section id="footer" class="fadeInUp wow">
+			<hr style="display: none">
+			<nav class="clear-fix">
+				<a href="http://getpopcornti.me" class="logo">Popcorn time</a>
+				<ul>
+					<li class="social"><a href="https://facebook.com/getpopcorntime" target="_blank" class="icon-facebook"> </a></li>
+					<li class="social"><a href="http://twitter.com/getpopcornapp" target="_blank" class="icon-twitter"> </a></li>
+					<li class="github"><a href="http://github.com/popcorn-time" target="_blank" class="icon-github">Github</a></li>
+					<li class="download dl-mac"><a href="https://s3-us-west-2.amazonaws.com/popcorntime/Popcorn%2BHour%2BRC1.mac.zip" class="btn-main icon-mac">Download</a><small>For Mac OSX 10.7 and above</small></li>
+					<li class="download dl-win"><a href="https://s3-us-west-2.amazonaws.com/popcorntime/Popcorn%2BHour%2BRC1.win32.zip" class="btn-main icon-win">Download</a><small>For Windows XP and above</small></li>
+				</ul>
+			</nav>
+			<footer>
+				<hr>
+				<i class="film"></i>
+				<p>Made with <span>&lt;3</span> by a bunch of geeks from Buenos Aires<br /> <small><a href="tos.html">Terms of Service</a></small></p>
+				
+			</footer>
+		</section>
+	</div>
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/site.js"></script>
 </body>

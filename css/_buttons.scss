@@ -29,8 +29,32 @@
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), inset 0px 1px rgba(255,255,255,.2);
   }
 }
+.icon-twitter {
+  background: #36bff4;
+  &:before {
+    font-size: 16px;
+  }
+  &:hover {
+    background: #3cd0fa;
+  }
+  &:active {
+    background: #35bef3;
+  }
+}
+.icon-facebook {
+  background: #1b6fbb;
+  &:hover {
+    background: #2081d1;
+  }
+  &:active {
+    background: #1864a9;
+  }
+}
 .btn-wider {
 	padding: 14px 45px;
+}
+.btn-wide {
+  width: 200px;
 }
 .btn-med {
   width: 130px;
