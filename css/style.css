@@ -3136,7 +3136,7 @@ h5 {
 
 .soon #links .download,
 .soon #features .action {
-  display: none; }
+  display: none !important; }
 
 .soon #links .social {
   margin: 0 10px; }
