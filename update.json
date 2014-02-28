@@ -1,0 +1,18 @@
+{
+	"updated_at": "2014-02-28 19:10:00",
+	"windows": {
+		"version": "0.1.1",
+		"versionName": "Beta 2",
+		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
+	},
+	"mac": {
+		"version": "0.1.1",
+		"versionName": "Beta 2",
+		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
+	},
+	"linux": {
+		"version": "0.1.1",
+		"versionName": "Beta 2",
+		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
+	}
+}
