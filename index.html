@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--                                                                                                   
                                                         .,;+###+;:.                                 
@@ -58,6 +58,7 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<meta name="description" content="Stream movies from torrents. Skip the downloads. Launch, click, watch." />
 	<link rel="image_src" href="http://getpopcornti.me/images/header-ui.jpg" / >
+  
 	<meta property="og:title" content="Popcorn Time" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="http://getpopcornti.me/images/header-ui.jpg" />
@@ -73,7 +74,6 @@
 	
 	  ga('create', 'UA-48382234-1', 'getpopcornti.me');
 	  ga('send', 'pageview');
-	
 	</script>
 </head>
 <body class="beta soon">
@@ -89,8 +89,8 @@
 		</div>
 
 		<ul id="links">
-			<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac">Download now</a><br /><small>For Mac OSX 10.7 and above</small></li>
-			<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win">Download now</a><br /><small>For Windows 7 and above</small></li>
+			<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a><br /><small>For Mac OSX 10.7 and above</small></li>
+			<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a><br /><small>For Windows 7 and above</small></li>
 			<li class="social"><a href="http://facebook.com/getpopcorntime" class="btn-social btn-wide icon-facebook" target="_blank">Like Us</a></li>
 			<li class="social"><a href="http://twitter.com/getpopcornapp" class="btn-social btn-wide icon-twitter" target="_blank">Follow Us</a></li>
 		</ul>
@@ -135,11 +135,11 @@
 				<hr />
 				<h2>Best of all... it's free!</h2>
 				<div class="dl-mac">
-					<a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac">Download now</a>
+					<a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a>
 					<small>For Mac OSX 10.7 and above</small>
 				</div>
 				<div class="dl-win">
-					<a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win">Download now</a>
+					<a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a>
 					<small>For Windows 7 and above</small>
 				</div>
 			</div>
@@ -164,8 +164,8 @@
 				<p>You just take care of the popcorn, leave the rest to us.</p>
 			</div>
 			<ul class="platforms">
-				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac">Download now</a><small>For Mac OSX 10.7 and above</small></li>
-				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win">Download now</a><small>For Windows 7 and above</small></li>
+				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a><small>For Mac OSX 10.7 and above</small></li>
+				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a><small>For Windows 7 and above</small></li>
 				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="#" class="btn-disabled btn-med icon-linux">Linux</a><small>Soon!</small></li>
 			</ul>
 		</section>
@@ -182,8 +182,8 @@
 					<li class="social"><a href="https://facebook.com/getpopcorntime" target="_blank" class="icon-facebook"> </a></li>
 					<li class="social"><a href="http://twitter.com/getpopcornapp" target="_blank" class="icon-twitter"> </a></li>
 					<li class="github"><a href="http://github.com/popcorn-time" target="_blank" class="icon-github">Github</a></li>
-					<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac">Download</a><small>For Mac OSX 10.7 and above</small></li>
-					<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win">Download</a><small>For Windows 7 and above</small></li>
+					<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download</a><small>For Mac OSX 10.7 and above</small></li>
+					<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download</a><small>For Windows 7 and above</small></li>
 				</ul>
 			</nav>
 			<footer>
