@@ -1,5 +1,7 @@
-soon.beta #footer {
-
+.beta #footer {
+	.download {
+		display: none !important;
+	}
 	nav {
 		padding: 20px 0 25px;
 	}
@@ -17,17 +19,16 @@ soon.beta #footer {
 		margin-bottom: 0;
 	}
 }
-soon
+
 .beta #browse-movies {
 	display: none;
 }
 
 .soon #links .download,
 .soon #features .action {
+	display: none !important;
 }
 
 .soon #links .social {
 	margin: 0 10px;
-	display:none
 }
-
