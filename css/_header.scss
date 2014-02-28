@@ -10,6 +10,9 @@
 	-moz-box-sizing: border-box;
 	padding-top: 30px;
 	position: fixed;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	transform: translateX(0);
 	
 	.text {
 		padding: 0 0 40px;
