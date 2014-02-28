@@ -4352,43 +4352,35 @@ h5 {
   color: #6496b7;
 }
 
-/* line 2, _beta.scss */
-.beta #footer .download {
-  display: none !important;
-}
-/* line 5, _beta.scss */
-.beta #footer nav {
+/* line 3, _beta.scss */
+soon.beta #footer nav {
   padding: 20px 0 25px;
 }
-/* line 8, _beta.scss */
-.beta #footer ul {
+/* line 6, _beta.scss */
+soon.beta #footer ul {
   padding-top: 22px;
 }
-/* line 11, _beta.scss */
-.beta #footer > hr {
+/* line 9, _beta.scss */
+soon.beta #footer > hr {
   display: block !important;
   opacity: .2;
 }
 
-/* line 18, _beta.scss */
+/* line 16, _beta.scss */
 .beta #get-app .platforms {
   margin-bottom: 0;
 }
 
-/* line 23, _beta.scss */
+/* line 21, _beta.scss */
+soon
 .beta #browse-movies {
   display: none;
 }
 
-/* line 28, _beta.scss */
-.soon #links .download,
-.soon #features .action {
-  display: none !important;
-}
-
-/* line 32, _beta.scss */
+/* line 29, _beta.scss */
 .soon #links .social {
   margin: 0 10px;
+  display: none;
 }
 
 /* line 3, _os.scss */
