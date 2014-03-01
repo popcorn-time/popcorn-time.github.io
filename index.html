@@ -59,13 +59,31 @@
 	<meta name="description" content="Stream movies from torrents. Skip the downloads. Launch, click, watch." />
 	<link rel="image_src" href="http://getpopcornti.me/images/header-ui.jpg" / >
   
-	<meta property="og:title" content="Popcorn Time" />
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Popcorn Time | Watch torrent movies instantly" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="http://getpopcornti.me/images/header-ui.jpg" />
 	<meta property="og:url" content="http://getpopcornti.me" />
 	<meta property="og:site_name" content="Popcorn Time" />
+    
+    	<!-- Twitter Card data -->
+    	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@getpopcornapp" />
+    	<meta name="twitter:title" content="Popcorn Time | Watch torrent movies instantly" />
+    	<meta name="twitter:description" content="Stream movies from torrents. Skip the downloads. Launch, click, watch." />
+    	<!-- Twitter summary card with large image must be at least 280x150px -->
+    	<meta name="twitter:image:src" content="http://getpopcornti.me/images/header-ui.jpg" />
+    
+    	<!-- Google Authorship and Publisher Markup -->
+    	<!--<link rel="author" href="https://plus.google.com/[Google+_Profile]/posts" />
+    	<link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]" />-->
 
-	<title>Popcorn Time</title>
+    	<!-- Schema.org markup for Google+ -->
+    	<meta itemprop="name" content="Popcorn Time | Watch torrent movies instantly">
+    	<meta itemprop="description" content="Stream movies from torrents. Skip the downloads. Launch, click, watch.">
+    	<meta itemprop="image" content="http://getpopcornti.me/images/header-ui.jpg">
+
+	<title>Popcorn Time | Watch torrent movies instantly</title>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -77,10 +95,11 @@
 	</script>
 </head>
 <body class="beta">
+<div itemscope itemtype="http://schema.org/SoftwareApplication">
 	<section id="header">
 
 		<nav class="fixed-width fadeInDown wow">
-			<a href="http://getpopcornti.me" id="logo">Popcorn Time</a>
+			<a itemprop="url" href="http://getpopcornti.me" id="logo"><span itemprop="name">Popcorn Time</span></a>
 		</nav>
 
 		<div class="text fadeInDown wow">
@@ -94,7 +113,7 @@
 			<!--<li class="social"><a href="http://facebook.com/getpopcorntime" class="btn-social btn-wide icon-facebook" target="_blank">Like Us</a></li>
 			<li class="social"><a href="http://twitter.com/getpopcornapp" class="btn-social btn-wide icon-twitter" target="_blank">Follow Us</a></li>-->
 		</ul>
-		<img src="images/header-ui.jpg" class="ui-screenshot fadeInUp wow" alt="Popcorn Time UI">
+		<img itemprop="screenshot" src="images/header-ui.jpg" class="ui-screenshot fadeInUp wow" alt="Popcorn Time UI">
 	</section>
 
 	<div class="container">
@@ -163,9 +182,9 @@
 				<p>You just take care of the popcorn, leave the rest to us.</p>
 			</div>
 			<ul class="platforms">
-				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a><small>For Mac OSX 10.7 and above</small></li>
-				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a><small>For Windows 7 and above</small></li>
-				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download Now</a><small>For Linux (Beta)</small></li>
+				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a id="mac-url" itemprop="downloadUrl" href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a><small itemscope itemref="mac-url"><span itemprop="operatingSystem">For Mac OSX 10.7 and above</span></small></li>
+				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a id="win-url" itemprop="downloadUrl" href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a><small itemscope itemref="win-url"><span itemprop="operatingSystem">For Windows 7 and above</span></small></li>
+				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a id="lin-url" itemprop="downloadUrl" href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download Now</a><small itemscope itemref="lin-url"><span itemprop="operatingSystem">For Linux (Beta)</span></small></li>
 			</ul>
 		</section>
 
@@ -183,7 +202,7 @@
 					<li class="github"><a href="http://github.com/popcorn-time" target="_blank" class="icon-github">Github</a></li>
 					<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download</a><small>For Mac OSX 10.7 and above</small></li>
 					<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download</a><small>For Windows 7 and above</small></li>
-                    <li class="download dl-linux"><a href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download</a><small>For Linux (Beta)</small></li>
+                    			<li class="download dl-linux"><a href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download</a><small>For Linux (Beta)</small></li>
                 </ul>
 			</nav>
 			<footer>
@@ -195,5 +214,6 @@
 	</div>
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/site.js"></script>
+</div>
 </body>
 </html>
