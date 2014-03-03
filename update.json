@@ -1,9 +1,9 @@
 {
 	"updated_at": "2014-02-28 19:10:00",
-	"windows": {
-		"version": "0.1.0",
-		"versionName": "Beta 1",
-		"downloadUrl": "https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM",
+	 "windows": {
+		"version": "0.1.1",
+		"versionName": "Beta 2",
+		"downloadUrl": "https://mega.co.nz/#!4dQQDZbD!Gqex3-IerB0jqWzKEH9O1XMqRr5sumdGoHM6dV7aIJ4",
 		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
 	},
 	"mac": {
