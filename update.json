@@ -13,9 +13,9 @@
 		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
 	},
 	"linux": {
-		"version": "0.1.0",
-		"versionName": "Beta 1",
-		"downloadUrl": "https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY",
+		"version": "0.1.1",
+		"versionName": "Beta 2",
+		"downloadUrl": "https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc",
 		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
 	}
 }
