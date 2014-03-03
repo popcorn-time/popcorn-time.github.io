@@ -1,3 +1,6 @@
+<?php
+  $t = json_decode(file_get_contents('../languages/'.$language.'.json'));
+?>
 
 <!DOCTYPE HTML>
 <html>
@@ -85,14 +88,14 @@
 		</nav>
 
 		<div class="text fadeInDown wow">
-			<h1>Watch torrent movies instantly</h1>
-			<p>We are in Beta! But go ahead and try it!</p>
+			<h1><?= $t->pickup ?></h1>
+			<p><?= $t->pickupsubtitle ?></p>
 		</div>
 
 		<ul id="links">
 			<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9
-				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3YUzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a><br /><small>For Mac OSX 10.7 and above</small></li>
-			<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a><br /><small>For Windows 7 and above</small></li>
+				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3YUzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank"><?= $t->download ?></a><br /><small><?= $t->formac ?></small></li>
+			<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank"><?= $t->download ?></a><br /><small><?= $t->forwindows ?></small></li>
 			<!--<li class="social"><a href="http://facebook.com/getpopcorntime" class="btn-social btn-wide icon-facebook" target="_blank">Like Us</a></li>
 			<li class="social"><a href="http://twitter.com/getpopcornapp" class="btn-social btn-wide icon-twitter" target="_blank">Follow Us</a></li>-->
 		</ul>
@@ -101,59 +104,59 @@
 
 	<div class="container">
 		<div class="warning fadeIn wow">
-			<h5 class="icon-info">Popcorn Time streams movies from torrents</h5>
-			<p>Downloading copyrighted material through torrents may be illegal in your country. Use at your own risk.</p>
+			<h5 class="icon-info"><?= $t->warning ?></h5>
+			<p><?= $t->warningsubtitle ?></p>
 		</div>
 		<section id="features" class="fixed-width">
 			<div class="clear-fix">
 				<article class="fadeInLeft wow">
 					<img src="images/icon-best.gif" alt="">
-					<h5>The best movies</h5>
-					<p>We're constantly searching all over the web for the best torrents from the most important sites.</p>
+					<h5><?= $t->featureone ?></h5>
+					<p><?= $t->featureonesubtitle ?></p>
 				</article>
 
 				<article class="fadeInRight wow">
 					<img src="images/icon-watch.gif" alt="">
-					<h5>No restriction</h5>
-					<p>Watch any movie as many times as you want. All you need to get started is a proper internet connection.</p>
+					<h5><?= $t->featuretwo ?></h5>
+					<p><?= $t->featuretwosubtitle ?></p>
 				</article>
 
 				<article class="fadeInLeft wow">
 					<img src="images/icon-search.gif" alt="">
-					<h5>Endless catalogue</h5>
-					<p>If the movie is out there, Popcorn Time will find the best version possible and start streaming it right away.</p>
+					<h5><?= $t->featurethree ?></h5>
+					<p><?= $t->featurethreesubtitle ?></p>
 				</article>
 
 				<article class="fadeInRight wow">
 					<img src="images/icon-subs.gif" alt="">
-					<h5>The best quality</h5>
-					<p>No more waiting; watch your movie instantly in HD and with subtitles. And then watch one more.</p>
+					<h5><?= $t->featurefour ?></h5>
+					<p><?= $t->featurefoursubtitle ?></p>
 				</article>
 			</div>
 
 			<div class="width-50 align-center action fadeInUp wow">
 				<img src="images/pochoclin.gif" alt="Pochoclin" class="align-center pochoclin">
 				<hr />
-				<h2>Best of all... it's free!</h2>
+				<h2><?= $t->itsfree ?></h2>
 				<div class="dl-mac">
-					<a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a>
-					<small>For Mac OSX 10.7 and above</small>
+					<a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank"><?= $t->download ?></a>
+					<small><?= $t->formac ?></small>
 				</div>
 				<div class="dl-win">
-					<a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a>
-					<small>For Windows 7 and above</small>
+					<a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank"><?= $t->download ?></a>
+					<small><?= $t->forwindows ?></small>
 				</div>
 			</div>
 		</section>
 
 		<section id="how">
 			<div class="fixed-width fadeInLeft wow">
-				<h2>Hard to believe?</h2>
-				<h4>See how easy it works</h4>
+				<h2><?= $t->hardtobelieve ?></h2>
+				<h4><?= $t->hardtobelievesubtitle ?></h4>
 				<ul class="steps">
-					<li class="icon-eye">Open PT &amp; select a movie</li>
-					<li class="icon-hd">Choose HD &amp; Subtitles</li>
-					<li class="icon-play">Press play &amp; enjoy!</li>
+					<li class="icon-eye"><?= $t->stepone ?></li>
+					<li class="icon-hd"><?= $t->steptwo ?></li>
+					<li class="icon-play"><?= $t->stepthree ?></li>
 				</ul>
 			</div>
 			<img src="images/how-ui.jpg" class="ui-screenshot fadeInRight wow" alt="Popcorn Time UI">
@@ -161,18 +164,18 @@
 
 		<section id="get-app">
 			<div class="fadeIn wow">
-				<h2>A whole new way to watch movies</h2>
-				<p>You just take care of the popcorn, leave the rest to us.</p>
+				<h2><?= $t->newway ?></h2>
+				<p><?= $t->newwaysubtitle ?></p>
 			</div>
 			<ul class="platforms">
-				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" " class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a><small>For Mac OSX 10.7 and above</small></li>
-				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a><small>For Windows 7 and above</small></li>
-				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download now</a><small>For Linux (Beta)</small></li>
+				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" " class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank"><?= $t->download ?></a><small><?= $t->formac ?></small></li>
+				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank"><?= $t->download ?></a><small><?= $t->forwindows ?></small></li>
+				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank"><?= $t->download ?></a><small><?= $t->forlinux ?></small></li>
 			</ul>
 		</section>
 
 		<section id="browse-movies">
-			<h2>These are some of the movies you'd be able to watch</h2>
+			<h2><?= $t->browsemovies ?></h2>
 		</section>
 
 		<section id="footer" class="fadeInUp wow">
@@ -183,9 +186,9 @@
 					<li class="social"><a href="https://facebook.com/getpopcorntime" target="_blank" class="icon-facebook"> </a></li>
 					<li class="social"><a href="http://twitter.com/getpopcornapp" target="_blank" class="icon-twitter"> </a></li>
 					<li class="github"><a href="http://github.com/popcorn-time" target="_blank" class="icon-github">Github</a></li>
-					<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download now</a><small>For Mac OSX 10.7 and above</small></li>
-					<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download now</a><small>For Windows 7 and above</small></li>
-                    <li class="download dl-linux"><a href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download now</a><small>For Linux (Beta)</small></li>
+					<li class="download dl-mac"><a href="https://mega.co.nz/#!9BREXTCa!Qs980yuyFTYQsmBxNUbrfhtM9UzW148VucDBx6lKu3Y" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank"><?= $t->download ?></a><small><?= $t->formac ?></small></li>
+					<li class="download dl-win"><a href="https://mega.co.nz/#!NAghnRKY!jpB3adN_meEbBCL_us8kmhdGILwbYw248IEdN2bG-rM" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank"><?= $t->download ?></a><small><?= $t->forwindows ?></small></li>
+                    <li class="download dl-linux"><a href="https://mega.co.nz/#!zMYlCKBD!AxBsn1ta0QwhRgA9uD56Xy3hs8w8MVDyDkpUNfzqAcY" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank"><?= $t->download ?></a><small><?= $t->forlinux ?></small></li>
                 </ul>
 			</nav>
 			<footer>
