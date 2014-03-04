@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^faq$ faq.html [L]
+RewriteRule ^tos$ tos.html [L]
