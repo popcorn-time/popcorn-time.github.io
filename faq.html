@@ -76,9 +76,8 @@
 	  ga('send', 'pageview');
 	</script>
 </head>
-<body class="beta">
+<body id="page-faq" class="beta">
 	<section id="header">
-
 		<nav class="fixed-width fadeInDown wow">
 			<a href="http://getpopcornti.me" id="logo">Popcorn Time</a>
 			<ul class="align-right">
@@ -92,95 +91,66 @@
 				<li class="text"><a href="tos">TOS</a></li>
 			</ul>
 		</nav>
-
-		<div class="text fadeInDown wow">
-			<h1>Watch torrent movies instantly</h1>
-			<p>We are in Beta! But go ahead and try it!</p>
-		</div>
-
-		<ul id="links">
-			<li class="download dl-mac"><a href="https://mega.co.nz/#!ENRlHJYT!BR7n4bQCN2oAW7fYYaJ6bcGT6pV36x7AxoTPkymbiP0" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download Beta 2</a><br /><small>For Mac OSX 10.7 and above</small></li>
-			<li class="download dl-win"><a href="https://mega.co.nz/#!4dQQDZbD!Gqex3-IerB0jqWzKEH9O1XMqRr5sumdGoHM6dV7aIJ4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download Beta 2</a><br /><small>For Windows 7 and above</small></li>
-			<!--<li class="social"><a href="http://facebook.com/getpopcorntime" class="btn-social btn-wide icon-facebook" target="_blank">Like Us</a></li>
-			<li class="social"><a href="http://twitter.com/getpopcornapp" class="btn-social btn-wide icon-twitter" target="_blank">Follow Us</a></li>-->
-		</ul>
-		<img src="images/header-ui.png" class="ui-screenshot fadeInUp wow" alt="Popcorn Time UI">
 	</section>
 
-	<div class="container">
-		<div class="warning fadeIn wow">
-			<h5 class="icon-info">Popcorn Time streams movies from torrents</h5>
-			<p>Downloading copyrighted material through torrents may be illegal in your country. Use at your own risk.</p>
-		</div>
-		<section id="features" class="fixed-width">
-			<div class="clear-fix">
-				<article class="fadeInLeft wow">
-					<img src="images/icon-best.gif" alt="">
-					<h5>The best movies</h5>
-					<p>We're constantly searching all over the web for the best torrents from the most important sites.</p>
-				</article>
+	<div class="container fadeIn wow">
+		<section id="faq" class="fixed-width">
+			<p class="warning">Always make sure you're running the latest Popcorn Time version.</a></p>
 
-				<article class="fadeInRight wow">
-					<img src="images/icon-watch.gif" alt="">
-					<h5>No restrictions</h5>
-					<p>Watch any movie as many times as you want. All you need to get started is a proper internet connection.</p>
-				</article>
+			<article id="what">
+				<h1>Frequently Asked Questions</h1>
+				<p>Popcorn Time! is the result of many developers and designers putting a bunch of APIs together to make the experience of watching torrent movies as simple as possible.</p>
+				<p>We are an open source project. We are from all over the world. We love our movies. And boy, do we love popcorn.</p>	
+			</article>
 
-				<article class="fadeInLeft wow">
-					<img src="images/icon-search.gif" alt="">
-					<h5>Endless catalogue</h5>
-					<p>If the movie is out there, Popcorn Time will find the best version possible and start streaming it right away.</p>
-				</article>
+			<article id="legal">
+				<h2>Is this legal?</h2>
+				<p>Depends on where you're from, really.</p>
+			</article>
 
-				<article class="fadeInRight wow">
-					<img src="images/icon-subs.gif" alt="">
-					<h5>The best quality</h5>
-					<p>No more waiting; watch your movie instantly in HD and with subtitles. And then watch one more.</p>
-				</article>
-			</div>
+			<article id="seeding">
+				<h2>This works through torrents, fair enough. Am I seeding while watching a movie?</h2>
+				<p>Indeed, you are. You're going to be uploading bits and bits of the movie for as long as you're watching it on Popcorn Time.</p>
+			</article>
 
-			<div class="width-50 align-center action fadeInUp wow">
-				<img src="images/pochoclin.gif" alt="Pochoclin" class="align-center pochoclin">
-				<hr />
-				<h2>Best of all... it's free!</h2>
-				<div class="dl-mac">
-					<a href="https://mega.co.nz/#!ENRlHJYT!BR7n4bQCN2oAW7fYYaJ6bcGT6pV36x7AxoTPkymbiP0" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download Beta 2</a>
-					<small>For Mac OSX 10.7 and above</small>
-				</div>
-				<div class="dl-win">
-					<a href="https://mega.co.nz/#!4dQQDZbD!Gqex3-IerB0jqWzKEH9O1XMqRr5sumdGoHM6dV7aIJ4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download Beta 2</a>
-					<small>For Windows 7 and above</small>
-				</div>
-			</div>
-		</section>
+			<article id="movies">
+				<h2>How come you've got the latest movies?</h2>
+				<p>We track movies uploaded by YIFY. Better ask them how they are handling this!</p>
+			</article>
 
-		<section id="how">
-			<div class="fixed-width fadeInLeft wow">
-				<h2>Hard to believe?</h2>
-				<h4>See how easy it works</h4>
-				<ul class="steps">
-					<li class="icon-eye">Open PT &amp; select a movie</li>
-					<li class="icon-hd">Choose HD &amp; Subtitles</li>
-					<li class="icon-play">Press play &amp; enjoy!</li>
-				</ul>
-			</div>
-			<img src="images/how-ui.png" class="ui-screenshot fadeInRight wow" alt="Popcorn Time UI">
-		</section>
+			<article id="languages">
+				<h2>Will you be adding movies in my language?</h2>
+				<p>Chances are that most (if not all) of the movies available in Popcorn Time will be in English. However, languages for subtitles and the app itself are constantly being added by our lovely contributors.</p>
+			</article>
 
-		<section id="get-app">
-			<div class="fadeIn wow">
-				<h2>A whole new way to watch movies</h2>
-				<p>You just take care of the popcorn, leave the rest to us.</p>
-			</div>
-			<ul class="platforms">
-				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!ENRlHJYT!BR7n4bQCN2oAW7fYYaJ6bcGT6pV36x7AxoTPkymbiP0" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download Beta 2</a><small>For Mac OSX 10.7 and above</small></li>
-				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!4dQQDZbD!Gqex3-IerB0jqWzKEH9O1XMqRr5sumdGoHM6dV7aIJ4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download Beta 2</a><small>For Windows 7 and above</small></li>
-				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download Now</a><small>For Linux (Beta)</small></li>
-			</ul>
-		</section>
+			<article id="cant-launch">
+				<h2>Why can't I launch Popcorn Time?</h2>
+				<p class="icon-mac"><strong>Your system may prevent unsigned apps from being run</strong><br />Go to <span class="code">System Preferences > Security > Allow Apps downloaded from > Anywhere</span> and try to launch Popcorn Time! again.</p>
+				<p class="icon-mac"><strong>You may have not have enough User Priviliges</strong><br />
+					Open a Terminal, and type:
+					<ul class="step-code">
+						<li><span class="code">$ chmod +x /Applications/Popcorn\ Time.app/Contents/MacOS/node-webkit</span></li>
+						<li><span class="code">$ chmod +x /Applications/Popcorn\ Time.app/Contents/Frameworks/crash_inspector</span></li>
+						<li><span class="code">$ chmod +x /Applications/Popcorn\ Time.app/Contents/Frameworks/node-webkit\ Helper.app/Contents/MacOS/node-webkit\ Helper</span></li>
+						<li><span class="code">$ chmod +x /Applications/Popcorn\ Time.app/Contents/Frameworks/node-webkit\ Helper\ EH.app/Contents/MacOS/node-webkit\ Helper\ EH</span></li>
+						<li><span class="code">$ chmod +x /Applications/Popcorn\ Time.app/Contents/Frameworks/node-webkit\ Helper\ NP.app/Contents/MacOS/node-webkit\ Helper\ NP</span></li>
+					</ul></p>
+			</article>
 
-		<section id="browse-movies">
-			<h2>These are some of the movies you'd be able to watch</h2>
+			<article id="stuck">
+				<h2>I can't get past the initial "Please wait..." screen :(</h2>
+				<p>Chances are that you're from the UK. Nothing we can do about that right now, sorry. But setting up a proxy might do the trick.</p>
+			</article>
+
+			<article id="select-subtitles">
+				<h2>Why can't I select subtitles?</h2>
+				<p>You may have to wait until all of the movie data (cover, summary, length, etc...) is retrieved. Sometimes it may be something else! Who knows :P</p>
+			</article>
+
+			<article id="new-apps">
+				<h2>Thinking about launching for Android/iOS/Chromecast/Smart TVs/Commodore 64?</h2>
+				<p>Our efforts are towards making the best desktop app for watching torrent movies. So, no. Launching versions for other devices is not in our roadmap.</p>
+			</article>
 		</section>
 
 		<section id="footer" class="fadeInUp wow">

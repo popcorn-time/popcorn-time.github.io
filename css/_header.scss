@@ -13,6 +13,71 @@
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	transform: translateX(0);
+
+	nav {
+		position: relative;
+
+		.align-left {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.align-right {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		ul {
+			list-style: none;
+			margin: 5px 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 10px;
+			}
+
+			li.text {
+				font-size: 18px;
+				padding: 0;
+
+				a {
+					color: #fff;
+					text-decoration: none;	
+				}
+			}
+			li.social a {
+				display: block;
+				width: 26px;
+				height: 26px;
+				text-align: center;
+				color: #fff;
+				text-decoration: none;
+				line-height: 32px;
+				border-radius: 50%;
+				position: relative;
+
+				&.icon-facebook:before {
+					font-size: 16px;
+					position: absolute;
+					top: 5px;
+					left: 9px;
+				}
+				&.icon-twitter:before {
+					font-size: 12px;
+					position: absolute;
+					top: 7px;
+					left: 6px;
+				}
+				&.icon-github:before {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					font-size: 25px;
+				}
+			}
+		}
+	}
 	
 	.text {
 		padding: 0 0 40px;

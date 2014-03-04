@@ -2728,6 +2728,14 @@ h5 {
   width: 50%;
   text-align: center; }
 
+span.code {
+  font-family: "Courier";
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  border-radius: 2px;
+  font-size: 14px; }
+
 [class^="btn-"] {
   border-radius: 3px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4), inset 0px 1px rgba(255, 255, 255, 0.2);
@@ -2798,6 +2806,54 @@ h5 {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   transform: translateX(0); }
+  #header nav {
+    position: relative; }
+    #header nav .align-left {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #header nav .align-right {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    #header nav ul {
+      list-style: none;
+      margin: 5px 0;
+      padding: 0; }
+      #header nav ul li {
+        display: inline-block;
+        margin: 0 10px; }
+      #header nav ul li.text {
+        font-size: 18px;
+        padding: 0; }
+        #header nav ul li.text a {
+          color: #fff;
+          text-decoration: none; }
+      #header nav ul li.social a {
+        display: block;
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        line-height: 32px;
+        border-radius: 50%;
+        position: relative; }
+        #header nav ul li.social a.icon-facebook:before {
+          font-size: 16px;
+          position: absolute;
+          top: 5px;
+          left: 9px; }
+        #header nav ul li.social a.icon-twitter:before {
+          font-size: 12px;
+          position: absolute;
+          top: 7px;
+          left: 6px; }
+        #header nav ul li.social a.icon-github:before {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          font-size: 25px; }
   #header .text {
     padding: 0 0 40px; }
   #header h1 {
@@ -3123,6 +3179,81 @@ h5 {
       color: #d7d4d4; }
       #footer footer small a {
         color: #6496b7; }
+
+#page-faq #header {
+  height: auto;
+  position: static;
+  background-image: none; }
+#page-faq .container {
+  top: auto; }
+  #page-faq .container article {
+    border-top: 1px solid #eee;
+    padding: 10px 0 15px; }
+  #page-faq .container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0e1226;
+    margin-bottom: 10px; }
+  #page-faq .container #what {
+    border-top: 0;
+    padding: 0; }
+    #page-faq .container #what p {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 20px;
+      margin-top: 0; }
+  #page-faq .container article:not(#what) p {
+    font-size: 18px;
+    line-height: 22px; }
+  #page-faq .container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0e1226;
+    margin-bottom: 5px; }
+  #page-faq .container h2 + p {
+    margin-top: 0; }
+  #page-faq .container strong {
+    color: #0e1226;
+    opacity: .6; }
+  #page-faq .container .icon-mac,
+  #page-faq .container .icon-win {
+    position: relative;
+    padding-left: 50px; }
+    #page-faq .container .icon-mac:before,
+    #page-faq .container .icon-win:before {
+      position: absolute;
+      left: 18px;
+      top: 0; }
+  #page-faq .container .warning {
+    padding: 10px 10px 10px 50px;
+    border-radius: 2px;
+    position: relative; }
+    #page-faq .container .warning:before {
+      position: absolute;
+      top: 10px;
+      left: 18px;
+      font-family: 'popcorn';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      margin-right: 10px;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\e60d";
+      font-size: 18px;
+      color: #858230; }
+    #page-faq .container .warning a {
+      color: #858230;
+      font-weight: bold; }
+      #page-faq .container .warning a:hover {
+        text-decoration: none; }
+  #page-faq .container .step-code li {
+    list-style: none;
+    padding: 5px 0 5px 10px; }
 
 .beta #footer .download {
   display: none !important; }

@@ -1,0 +1,103 @@
+#page-faq {
+	
+	#header {
+		height: auto;
+		position: static;
+		background-image: none;
+	}
+
+	.container {
+		top: auto;
+
+		article {
+			border-top: 1px solid #eee;
+			padding: 10px 0 15px;
+		}
+		
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			color: $dark-blue;
+			margin-bottom: 10px;
+		}
+		#what {
+			border-top: 0;
+			padding: 0;
+			p {
+				font-size: 24px;
+				line-height: 32px;
+				margin-bottom: 20px;
+				margin-top: 0;
+			}
+		}
+		article:not(#what) p {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		h2 {
+			font-size: 24px;
+			font-weight: bold;
+			color: $dark-blue;
+			margin-bottom: 5px;
+		}
+		h2 + p {
+			margin-top: 0;
+		}
+		strong {
+			color: $dark-blue;
+			opacity: .6;
+		}
+		.icon-mac, 
+		.icon-win {
+			position: relative;
+			padding-left: 50px;
+
+			&:before {
+				position: absolute;
+				left: 18px;
+				top: 0;
+			}
+		}
+		.warning {
+			padding: 10px 10px 10px 50px;
+			border-radius: 2px;
+			position: relative;
+
+			&:before {
+				position: absolute;
+				top: 10px;
+				left: 18px;
+				font-family: 'popcorn';
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				margin-right: 10px;
+
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;	
+				content: "\e60d";
+				font-size: 18px;
+				color: #858230;
+			}
+
+			a {
+				color: #858230;
+				font-weight: bold;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.step-code li {
+			list-style: none;
+			padding: 5px 0 5px 10px;
+		}
+	}
+}
+
