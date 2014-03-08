@@ -1,13 +1,22 @@
 body.mac .dl-win,
+body.mac .dl-linux,
 body.win .dl-mac,
-body.nope .dl-win {
+body.win .dl-lin,
+body.lin .dl-mac,
+body.lin .dl-win,
+body.nope .dl-win,
+body.nope .dl-mac {
 	display: none !important;
 }
 
-body .dl-win {
+body .dl-win, body .dl-lin {
 	display: none !important;
 }
 
 body.win .dl-win {
+	display: inline-block !important;
+}
+
+body.lin .dl-lin {
 	display: inline-block !important;
 }
