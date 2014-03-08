@@ -7,18 +7,18 @@ if($(window).width() > 768) {
     }
   );
   wow.init();
-});
+};
 
 var userAgent = navigator.platform;
 //alert(userAgent);
 if(userAgent.substring(0,3) == "Mac") {
-	document.getElementsByTagName('body')[0].className+=' mac'
+	document.getElementsByTagName('body')[0].className+=' mac';
 } else if (userAgent.substring(0,3) == "Win") {
-	document.getElementsByTagName('body')[0].className+=' win'
+	document.getElementsByTagName('body')[0].className+=' win';
 } else if (userAgent.substring(0,3) == "Lin") {
-	document.getElementsByTagName('body')[0].className+=' lin'
+	document.getElementsByTagName('body')[0].className+=' lin';
 } else {
-	document.getElementsByTagName('body')[0].className+=' nope'
+	document.getElementsByTagName('body')[0].className+=' nope';
 }
 
 /*var obj = document.getElementById("header");
