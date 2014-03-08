@@ -1,0 +1,2 @@
+// Disable WOW on small screens.
+if($(window).width()>768){wow=new WOW({animateClass:"animated",offset:100});wow.init()}var userAgent=navigator.platform;userAgent.substring(0,3)=="Mac"?document.getElementsByTagName("body")[0].className+=" mac":userAgent.substring(0,3)=="Win"?document.getElementsByTagName("body")[0].className+=" win":userAgent.substring(0,3)=="Lin"?document.getElementsByTagName("body")[0].className+=" lin":document.getElementsByTagName("body")[0].className+=" nope";var heroHeight=document.getElementById("header").offsetHeight;
