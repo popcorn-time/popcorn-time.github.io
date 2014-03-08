@@ -37,11 +37,11 @@
 			&.download {
 				position: relative;
 				top: 9px;
-			}	
+			}
 			&.github {
 				position: relative;
 				margin-left: 70px;
-			}	
+			}
 		}
 		a {
 			color: #a2a2a2;
@@ -104,7 +104,7 @@
 			color: #6496b7;
 			font-size: 12px;
 			font-style: italic;
-			
+
 		}
 	}
 
@@ -139,6 +139,32 @@
 			color: #d7d4d4;
 			a {
 				color:#6496b7;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 830px){
+	#footer {
+		nav {
+			padding: 20px 6%;
+			padding-bottom: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	#footer {
+		.logo {
+			float: none;
+			width: 193px;
+			margin: 10px auto;
+		}
+		nav {
+			ul {
+				float: none;
+				width: 100%;
+				text-align: center;
 			}
 		}
 	}

@@ -31,3 +31,23 @@
 		}
 	}
 }
+
+@media screen and (max-width: 830px){
+	#get-app {
+		.text {
+			padding: 0 5%;
+			font-size: 0.7em;
+			h2 {
+				font-size: 1.5em;
+				line-height: 1;
+			}
+		}
+		.platforms {
+			padding: 0;
+			li {
+				display: block;
+				margin: 40px 0;
+			}
+		}
+	}
+}

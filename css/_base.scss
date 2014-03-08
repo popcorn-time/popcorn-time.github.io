@@ -3,7 +3,6 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 	color: darken(#b1b5bd, 20%);
-	min-width: 980px;
 }
 
 section {
@@ -26,7 +25,7 @@ img {
 }
 
 .fixed-width {
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -88,4 +87,10 @@ span.code {
 	padding: 2px;
 	border-radius: 2px;
 	font-size: 14px;
+}
+
+@media screen and (max-width: 500px){
+	.width-50 {
+		width: 100%;
+	}
 }

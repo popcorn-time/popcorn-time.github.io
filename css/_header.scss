@@ -43,7 +43,7 @@
 
 				a {
 					color: #fff;
-					text-decoration: none;	
+					text-decoration: none;
 				}
 			}
 			li.social a {
@@ -78,7 +78,7 @@
 			}
 		}
 	}
-	
+
 	.text {
 		padding: 0 0 40px;
 	}
@@ -93,6 +93,7 @@
 	}
 
 	.ui-screenshot {
+		max-width: 100%;
 		box-shadow: 0px -10px 30px 10px rgba(67,244,249, .25);
 	}
 }
@@ -150,5 +151,40 @@
 	a {
 		color: #fff;
 		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.align-left {
+		left: 4%;
+	}
+	.align-right {
+		right: 4%
+	}
+}
+
+@media screen and (max-width: 510px){
+	#header {
+		height: 480px;
+		position: static;
+	}
+	.container {
+		position: static;
+	}
+	.text {
+		h1 {
+			font-size: 2em;
+		}
+		max-width: 90%;
+		margin: 0 auto;
+		font-size: 0.8em;
+	}
+	nav {
+		.align-left, .align-right {
+			display: none;
+		}
+	}
+	#links {
+		display: none;
 	}
 }

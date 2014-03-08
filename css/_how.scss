@@ -105,3 +105,15 @@
 		margin-left: -150px;
 	}
 }
+
+@media screen and (max-width: 830px) {
+	#how {
+		background-position: left;
+		.ui-screenshot {
+			display: none;
+		}
+		.fixed-width {
+			max-width: 270px;
+		}
+	}
+}

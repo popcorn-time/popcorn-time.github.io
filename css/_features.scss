@@ -15,7 +15,7 @@
 			margin-right: 25px;
 			position: relative;
 			top: -10px;
-		}	
+		}
 	}
 
 	.action {
@@ -59,7 +59,7 @@
 		font-size: 18px;
 		color: #858230;
 		display: block;
-		width: 880px;
+		max-width: 880px;
 		margin: 0 auto;
 		position: relative;
 
@@ -72,7 +72,60 @@
 	p {
 		font-style: italic;
 		display: block;
-		width: 880px;
+		max-width: 880px;
 		margin: 5px auto;
+	}
+}
+
+@media screen and (max-width: 980px){
+	#features {
+		article{
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			width: 100%;
+			max-width: 800px;
+			margin: 40px auto !important;
+			padding: 0 8%;
+			overflow: hidden;
+			float: none;
+		}
+	}
+	.warning {
+		text-align: center;
+		h5:before {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 750px){
+	#features {
+		.pochoclin {
+			padding: 0;
+		}
+		hr {
+			display: none;
+		}
+		hr + h2 {
+			margin-top: 20px;
+			font-size: 30px;
+			color: rgb(0, 0, 0);
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	#features {
+		article{
+			padding-top: 20px;
+			max-width: 400px;
+			p {
+				margin-left: 105px;
+			}
+			img {
+				max-width: 80px;
+			}
+		}
 	}
 }

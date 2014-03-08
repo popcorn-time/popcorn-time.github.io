@@ -1,10 +1,13 @@
-wow = new WOW(
-  {
-    animateClass: 'animated',
-    offset:       100
-  }
-);
-wow.init();
+// Disable WOW on small screens.
+if($(window).width() > 768) {
+  wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100
+    }
+  );
+  wow.init();
+});
 
 var userAgent = navigator.platform;
 //alert(userAgent);
