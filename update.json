@@ -1,16 +1,16 @@
 {
 	"updated_at": "2014-02-28 19:10:00",
 	 "windows": {
-		"version": "0.1.1",
-		"versionName": "Beta 2",
-		"downloadUrl": "https://mega.co.nz/#!4dQQDZbD!Gqex3-IerB0jqWzKEH9O1XMqRr5sumdGoHM6dV7aIJ4",
-		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
+		"version": "0.2.0",
+		"versionName": "Beta 2.5",
+		"downloadUrl": "https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4",
+		"description": "Popcorn Time Beta 2.5 has many improvements, including better subtitles, faster load times, new languages, and a ton of bug fixes. Update now!"
 	},
 	 "mac": {
-		"version": "0.1.1",
-		"versionName": "Beta 2",
-		"downloadUrl": "https://mega.co.nz/#!ENRlHJYT!BR7n4bQCN2oAW7fYYaJ6bcGT6pV36x7AxoTPkymbiP0",
-		"description": "Popcorn Time Beta 2 has many improvements, including faster load times, new languages, and a ton of bug fixes. Update now!"
+		"version": "0.2.0",
+		"versionName": "Beta 2.5",
+		"downloadUrl": "https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q",
+		"description": "Popcorn Time Beta 2.5 has many improvements, including better subtitles, faster load times, new languages, and a ton of bug fixes. Update now!"
 	},
 	"linux": {
 		"version": "0.1.1",
