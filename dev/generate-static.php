@@ -1,7 +1,8 @@
 <?php
   $langs = array(
     'en',
-    'fr'
+    'fr',
+    'tr'
   );
 
   foreach ($langs as $language){
