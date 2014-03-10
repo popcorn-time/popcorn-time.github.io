@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--
                                                         .,;+###+;:.
@@ -55,30 +55,18 @@
                                     :@;     `'++#@@##';,.`
                                        ;,.`                                                          -->
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-	<title>Popcorn Time - Watch torrent movies instantly</title>
-	<meta name="description" content="Skip the downloads! Watch the best movies instantly in HD, with subtitles, for free! Available for Windows, Mac and Linux." />
+	<title>Popcorn Time - Mirá películas en torrents instantáneamente</title>
+	<meta name="description" content="Basta de descargas! Mirá las mejores películas instantáneamente en HD, con subtítulos, gratis! Disponible para Windows, Mac y Linux." />
 	<link rel="image_src" href="http://getpopcornti.me/images/header-ui.jpg" / >
 
 	<meta property="og:title" content="Popcorn Time" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="http://getpopcornti.me/images/header-ui.jpg" />
-	<meta property="og:url" content="http://getpopcornti.me" />
+	<meta property="og:url" content="http://getpopcornti.me/es" />
 	<meta property="og:site_name" content="Popcorn Time" />
-
-	<script type="text/javascript">
-	// Redirect the user to the correct language
-	// TODO: Remember the preferred language
-	var language = (navigator.language || navigator.userLanguage).toLowerCase().slice(0,2); 
-	var supportedLanguages = ['es'];
-	if( language != 'en' ) {
-		for( i in supportedLanguages ) {
-			if( supportedLanguages[i] === language ){ window.location.replace("/"+language); break; }
-		}
-	}
-	</script>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -102,98 +90,98 @@
 			</ul>
 
 			<ul class="align-left">
-				<li class="text"><a href="faq">FAQ</a></li>
-				<li class="text"><a href="tos">TOS</a></li>
+				<li class="text"><a href="/faq">FAQ</a></li>
+				<li class="text"><a href="/tos">TyC</a></li>
 			</ul>
 		</nav>
 
 		<div class="text fadeInDown wow">
-			<h1>Watch torrent movies instantly</h1>
-			<p>Currenly in Beta, but go ahead and try it!</p>
+			<h1>Mirá películas en torrents al instante</h1>
+			<p>Estamos en Beta, pero podés probar la app!</p>
 		</div>
 
 		<ul id="links">
-			<li class="download dl-mac"><a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download Beta 2.5</a><br /><small>For Mac OSX 10.7 and above</small></li>
-			<li class="download dl-win"><a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download Beta 2.5</a><br /><small>For Windows 7 and above</small></li>
-			<li class="download dl-lin"><a href="https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download Beta 2</a><br /><small>For Linux Users</small></li>
+			<li class="download dl-mac"><a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Descargar Beta 2.5</a><br /><small>Para Mac OSX 10.7 y superiores</small></li>
+			<li class="download dl-win"><a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Descargar Beta 2.5</a><br /><small>Para Windows 7 y 8</small></li>
+			<li class="download dl-lin"><a href="https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Descargar Beta 2</a><br /><small>Para Linux</small></li>
 		</ul>
-		<img src="images/header-ui.jpg" class="ui-screenshot fadeInUp wow" alt="Popcorn Time UI">
+		<img src="/images/header-ui.jpg" class="ui-screenshot fadeInUp wow" alt="Popcorn Time UI">
 	</section>
 
 	<div class="container">
 		<div class="warning fadeIn wow">
-			<h5 class="icon-info">Popcorn Time streams movies from Torrents</h5>
-			<p>Downloading copyrighted material may be illegal in your country. Use at your own risk.</p>
+			<h5 class="icon-info">Popcorn Time descarga y seedea películas usando torrents</h5>
+			<p>Descargar material con copyright puede ser ilegal en tu país. Usá la app a tu propio riesgo.</p>
 		</div>
 		<section id="features" class="fixed-width">
 			<div class="clear-fix">
 				<article class="fadeInLeft wow">
-					<img src="images/icon-best.gif" alt="">
-					<h5>Great movies</h5>
-					<p>We're constantly searching all over the web for the best torrents from the most important sites.</p>
+					<img src="/images/icon-best.gif" alt="">
+					<h5>Las mejores películas</h5>
+					<p>Estamos constantemente buscando en la web los mejores torrents de los sitios principales de descargas.</p>
 				</article>
 
 				<article class="fadeInRight wow">
-					<img src="images/icon-watch.gif" alt="">
-					<h5>No restrictions</h5>
-					<p>Watch any movie as many times as you want. All you need to get started is a proper internet connection.</p>
+					<img src="/images/icon-watch.gif" alt="">
+					<h5>Sin restricciones</h5>
+					<p>Mirá cualquier película las veces que quieras. Sólo necesitás una buena conexión a internet.</p>
 				</article>
 
 				<article class="fadeInLeft wow">
-					<img src="images/icon-search.gif" alt="">
-					<h5>Awesome catalogue</h5>
-					<p>If the movie is out there, Popcorn Time will find the best version possible and start streaming it right away.</p>
+					<img src="/images/icon-search.gif" alt="">
+					<h5>El mejor catálogo</h5>
+					<p>Si la película existe, Popcorn Time va a encontrar la mejor versión disponible y abrirla en menos de 1 minuto.</p>
 				</article>
 
 				<article class="fadeInRight wow">
-					<img src="images/icon-subs.gif" alt="">
-					<h5>The best quality</h5>
-					<p>Watch your movie instantly in HD and with subtitles. And then keep watching.</p>
+					<img src="/images/icon-subs.gif" alt="">
+					<h5>La mejor calidad</h5>
+					<p>Mirá las películas instantáneamente en HD y con subtítulos en español especialmente seleccionados.</p>
 				</article>
 			</div>
 
 			<div class="width-50 align-center action fadeInUp wow">
-				<img src="images/pochoclin.gif" alt="Pochoclin" class="align-center pochoclin">
+				<img src="/images/pochoclin.gif" alt="Pochoclin" class="align-center pochoclin">
 				<hr />
-				<h2>Best of all... it's free!</h2>
+				<h2>Y además... es gratis!</h2>
 				<div class="dl-mac">
-					<a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download Beta 2.5</a>
-					<small>For Mac OSX 10.7 and above</small>
+					<a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Descargar Beta 2.5</a>
+					<small>Para Mac OSX 10.7 y superiores</small>
 				</div>
 				<div class="dl-win">
-					<a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download Beta 2.5</a>
-					<small>For Windows 7 and above</small>
+					<a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Descargar Beta 2.5</a>
+					<small>Para Windows 7 y 8</small>
 				</div>
 			</div>
 		</section>
 
 		<section id="how">
 			<div class="fixed-width fadeInLeft wow">
-				<h2>Hard to believe?</h2>
-				<h4>See how easy it works...</h4>
+				<h2>Difícil de creer?</h2>
+				<h4>Mirá lo fácil que es...</h4>
 				<ul class="steps">
-					<li class="icon-eye">Open PT &amp; select a movie</li>
-					<li class="icon-hd">Choose HD &amp; Subtitles</li>
-					<li class="icon-play">Click play &amp; enjoy!</li>
+					<li class="icon-eye">Abrí la app &amp; elegí una película</li>
+					<li class="icon-hd">Elegí HD &amp; subtítulos</li>
+					<li class="icon-play">Tocá play &amp; disfrutá!</li>
 				</ul>
 			</div>
-			<img src="images/how-ui.png" class="ui-screenshot fadeInRight wow" alt="Popcorn Time UI">
+			<img src="/images/how-ui.png" class="ui-screenshot fadeInRight wow" alt="Popcorn Time UI">
 		</section>
 
 		<section id="get-app">
 			<div class="text fadeIn wow">
-				<h2>A whole new way to watch movies</h2>
-				<p>Just take care of the popcorn &amp; leave the rest to us.</p>
+				<h2>Una nueva forma de mirar películas</h2>
+				<p>Encargate del pochoclo. Nosotros nos encargamos del resto.</p>
 			</div>
 			<ul class="platforms">
-				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download Beta 2.5</a><small>For Mac OSX 10.7 and above</small></li>
-				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download Beta 2.5</a><small>For Windows 7 and above</small></li>
-				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download Now</a><small>For Linux (Beta)</small></li>
+				<li class="mac icon-laptop fadeInUp wow" data-wow-delay=".2s"><a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Descargar Beta 2.5</a><small>Para Mac OSX 10.7 y superiores</small></li>
+				<li class="win icon-screen fadeInUp wow" data-wow-delay=".4s"><a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Descargar Beta 2.5</a><small>Para Windows 7 y 8</small></li>
+				<li class="browser icon-window fadeInUp wow" data-wow-delay=".6s"><a href="https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Descargar Beta 2</a><small>Para Linux (Beta)</small></li>
 			</ul>
 		</section>
 
 		<section id="browse-movies">
-			<h2>These are some of the movies you'd be able to watch</h2>
+			<h2>Estas son algunas de las películas que podés ver</h2>
 		</section>
 
 		<section id="footer" class="fadeInUp wow">
@@ -204,19 +192,19 @@
 					<li class="social"><a href="https://facebook.com/getpopcorntime" target="_blank" class="icon-facebook"> </a></li>
 					<li class="social"><a href="http://twitter.com/getpopcornapp" target="_blank" class="icon-twitter"> </a></li>
 					<li class="github"><a href="http://github.com/popcorn-time" target="_blank" class="icon-github">Github</a></li>
-					<li class="download dl-mac"><a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Download Beta 2.5</a><small>For Mac OSX 10.7 and above</small></li>
-					<li class="download dl-win"><a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Download Beta 2.5</a><small>For Windows 7 and above</small></li>
-                    <li class="download dl-linux"><a href="https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Download Beta 2</a><small>For Linux (Beta)</small></li>
+					<li class="download dl-mac"><a href="https://mega.co.nz/#!ZE5QxS7I!d3zXX8lLiq-ePuvgaJ08VUNmDo4LW1Hj0lvdxt8e_9Q" class="btn-main icon-mac" onclick="ga('send', 'event', 'Download', 'MacOS');" target="_blank">Descargar Beta 2.5</a><small>Para Mac OSX 10.7 y superiores</small></li>
+					<li class="download dl-win"><a href="https://mega.co.nz/#!cB4FxL6a!uZWeXJ--13XzxIgclRV2K9ShT5TuH42G_qnj05zCip4" class="btn-main icon-win" onclick="ga('send', 'event', 'Download', 'Windows');" target="_blank">Descargar Beta 2.5</a><small>Para Windows 7 y 8</small></li>
+                    <li class="download dl-linux"><a href="https://mega.co.nz/#!PUg0EQZQ!GANw4x6k9Yz51gJKywUOI6mcRvpxMb36ANtJOZ1zWQc" class="btn-main icon-linux" onclick="ga('send', 'event', 'Download', 'Linux');" target="_blank">Descargar Beta 2</a><small>Para Linux (Beta)</small></li>
                 </ul>
 			</nav>
 			<footer>
 				<hr>
 				<i class="film"></i>
-				<p>Made with <span>&lt;3</span> by a bunch of geeks from Buenos Aires<br /> <small><a href="tos">Terms of Service</a> &mdash; <a href="faq">FAQ</a></small></p>
+				<p>Hecho con <span>&lt;3</span> por un montón de geeks de Buenos Aires<br /> <small><a href="/tos">Términos y Condiciones</a> &mdash; <a href="/faq">Preguntas Frecuentes</a></small></p>
 			</footer>
 		</section>
 	</div>
-	<script type="text/javascript" src="js/wow.js"></script>
-	<script type="text/javascript" src="js/site.js?20140308"></script>
+	<script type="text/javascript" src="/js/wow.js"></script>
+	<script type="text/javascript" src="/js/site.js?20140308"></script>
 </body>
 </html>
