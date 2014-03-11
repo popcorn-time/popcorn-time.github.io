@@ -3,7 +3,8 @@
     'en',
     'fr',
     'tr',
-    'pt-br'
+    'pt-br',
+    'el'
   );
 
   foreach ($langs as $language){
