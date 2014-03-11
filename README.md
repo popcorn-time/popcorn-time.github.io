@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Site of PopCorn Time 
 ======================
 
@@ -13,4 +12,3 @@ Within the page "languages", there is the language files in JSON:
 In order to generate the html file, if php-cli is installed on your computer, add your language in the array of dev/generate-static.php and run php generate-static.php in the dev/ folder. If php-cli is not installed on your computer just notify it in your pull request.
 
 ***Any changes to the design should be done in dev/index.php: any change done in a .html file will be overwrited.***
->>>>>>> a452defb4dfdc0f138a7e319cc00be9a9d98584a
