@@ -3116,7 +3116,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @font-face {
   font-family: 'popcorn';
   src: url("../fonts/popcorn.eot?yuu85v");
-  src: url("../fonts/popcorn.eot?#iefixyuu85v") format("embedded-opentype"), url("../fonts/popcorn.woff?yuu85v") format("woff"), url("../fonts/popcorn.ttf?yuu85v") format("truetype"), url("../fonts/popcorn.svg?yuu85v#popcorn") format("svg");
+  src: url("../fonts/popcorn.svg?yuu85v#popcorn") format("svg"), url("../fonts/popcorn.eot?#iefixyuu85v") format("embedded-opentype"), url("../fonts/popcorn.woff?yuu85v") format("woff"), url("../fonts/popcorn.ttf?yuu85v") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
