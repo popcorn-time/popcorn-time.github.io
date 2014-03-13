@@ -3,6 +3,8 @@ Site of PopCorn Time
 
 To collaborate with the translation you should follow the steps below:
 
+***All of this work for translating the website is under the GNU Public License***
+
 Within the page "languages", there is the language files in JSON:
   1. If the JSON file for your language already exists, you can immediately begin to revise or implement. 
   2. If the JSON file for your language does not yet exist, you must create a file with the the abbreviation for your language and the extension ".json" (Example: en.json, pt-br.json).
