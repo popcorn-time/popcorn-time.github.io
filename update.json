@@ -1,0 +1,21 @@
+{
+"updated_at": "2014-03-14 15:30:00",
+"windows": {
+"version": "0.2.1",
+"versionName": "Goodbye",
+"downloadUrl": "http://getpopcornti.me",
+"description": "It's been a great experience. Thanks to all of you for making this possible."
+},
+"mac": {
+"version": "0.2.1",
+"versionName": "Goodbye",
+"downloadUrl": "http://getpopcornti.me",
+"description": "It's been a great experience. Thanks to all of you for making this possible."
+},
+"linux": {
+"version": "0.2.1",
+"versionName": "Goodbye",
+"downloadUrl": "http://getpopcornti.me",
+"description": "It's been a great experience. Thanks to all of you for making this possible."
+}
+}

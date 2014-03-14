@@ -1,0 +1,31 @@
+.beta #footer {
+	.download {
+		display: none !important;
+	}
+	ul {
+		padding-top: 22px;
+	}
+	> hr {
+		display: block !important;
+		opacity: .2;
+	}
+}
+
+.beta #get-app {
+	.platforms {
+		margin-bottom: 0;
+	}
+}
+
+.beta #browse-movies {
+	display: none;
+}
+
+.soon #links .download,
+.soon #features .action {
+	display: none !important;
+}
+
+.soon #links .social {
+	margin: 0 10px;
+}

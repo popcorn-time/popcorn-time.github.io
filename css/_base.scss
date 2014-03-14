@@ -1,0 +1,97 @@
+body {
+	font-family: "BrandonText";
+	font-size: 16px;
+	line-height: 19px;
+	color: darken(#b1b5bd, 20%);
+}
+
+section {
+	width: 100%;
+	max-width: 100%;
+}
+
+.container {
+	background: #fff;
+	top: 670px;
+	position: relative;
+	z-index: 1;
+}
+
+img {
+	pointer-events: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.fixed-width {
+	max-width: 760px;
+	padding: 0 20px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 48px;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	color: $headline-dark;
+	margin: 0;
+}
+
+.clear-fix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+}
+
+.align-center {
+	margin: 0 auto;
+	display: block;
+}
+
+.width-50 {
+	width: 50%;
+	text-align: center;
+}
+
+span.code {
+	font-family: "Courier";
+	background: rgba(0,0,0,.05);
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 2px;
+	border-radius: 2px;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 500px){
+	.width-50 {
+		width: 100%;
+	}
+}

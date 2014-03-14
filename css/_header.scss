@@ -1,0 +1,190 @@
+#header {
+	height: 670px;
+	overflow: hidden;
+	background: url(../images/bg-header.jpg) no-repeat center top #0a0b28;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-top: 30px;
+	position: fixed;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	transform: translateX(0);
+
+	nav {
+		position: relative;
+
+		.align-left {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.align-right {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		ul {
+			list-style: none;
+			margin: 5px 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 10px;
+			}
+
+			li.text {
+				font-size: 18px;
+				padding: 0;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+			li.social a {
+				display: block;
+				width: 26px;
+				height: 26px;
+				text-align: center;
+				color: #fff;
+				text-decoration: none;
+				line-height: 32px;
+				border-radius: 50%;
+				position: relative;
+
+				&.icon-facebook:before {
+					font-size: 16px;
+					position: absolute;
+					top: 5px;
+					left: 9px;
+				}
+				&.icon-twitter:before {
+					font-size: 12px;
+					position: absolute;
+					top: 7px;
+					left: 6px;
+				}
+				&.icon-github:before {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					font-size: 25px;
+				}
+			}
+		}
+	}
+
+	.text {
+		padding: 0 0 40px;
+	}
+
+	h1 {
+		margin-bottom: 5px;
+		margin-top: 0px;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.ui-screenshot {
+		max-width: 100%;
+		box-shadow: 0px -10px 30px 10px rgba(67,244,249, .25);
+	}
+}
+
+#logo {
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 211px;
+	height: 71px;
+	background: url(../images/header-logo.png) no-repeat;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#links {
+	font-size: 18px;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 30px;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		text-align: center;
+		/* margin: 0 25px; */
+		vertical-align: top;
+
+		&.download {
+			line-height: 40px;
+			margin-right: 0;
+
+			a {
+				line-height: 19px;
+			}
+		}
+		&.github {
+			position: relative;
+			top: 16px;
+
+			a:before {
+				position: absolute;
+				left: -30px;
+			}
+		}
+
+		small {
+			font-size: 12px;
+			color: rgba(0,0,0,.5);
+			font-weight: normal;
+			font-style: italic;
+		}
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.align-left {
+		left: 4%;
+	}
+	.align-right {
+		right: 4%
+	}
+}
+
+@media screen and (max-width: 510px){
+	#header {
+		height: 480px;
+		position: static;
+	}
+	.container {
+		position: static;
+	}
+	.text {
+		h1 {
+			font-size: 2em;
+		}
+		max-width: 90%;
+		margin: 0 auto;
+		font-size: 0.8em;
+	}
+	nav {
+		.align-left, .align-right {
+			display: none;
+		}
+	}
+	#links {
+		display: none;
+	}
+}
